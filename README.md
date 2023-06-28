@@ -55,12 +55,12 @@ pdbqt_string = 'REMARK  Name = '+title+'\n'+pdbqt_string
 <p>Try it：</p>
 <pre line="1" lang="python">
 mk_prepare_ligand_new.py -i actives_final.sdf \
-  --multimol_outdir actives_out \
+  --multimol_outdir actives \
    --multimol_prefix actives
 </pre>
 <p>Check one pdbqt file：</p>
 <pre line="1" lang="python">
-(rdkit2020) gkxiao@master:/public/gkxiao/work/meeko$ head actives_out/actives-1.pdbqt
+(rdkit2020) gkxiao@master:/public/gkxiao/work/meeko$ head actives/actives-1.pdbqt
 REMARK  Name = CHEMBL430421
 REMARK SMILES COC(=O)c1c(-c2cc(OC)c(OC)c(OC)c2)c2cc(OC)c(OC)cc2c(=O)n1C1CCCC1
 REMARK SMILES IDX 6 1 19 2 20 3 21 4 24 5 27 6 28 7 29 8 30 9 31 10 5 11 7 12
