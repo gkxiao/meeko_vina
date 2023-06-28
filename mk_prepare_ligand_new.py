@@ -300,8 +300,8 @@ if __name__ == '__main__':
                 output(pdbqt_string, mol_name, sufix=cov_lig.label)
         else:
             preparator.prepare(mol)
-            title = mol.GetProp('_Name')
             pdbqt_string = preparator.write_pdbqt_string()
+            title = mol.GetProp('_Name')
             pdbqt_string = 'REMARK  Name = '+title+'\n'+pdbqt_string
             mol_name = preparator.setup.name # setup.name may be None
             output(pdbqt_string, mol_name)
