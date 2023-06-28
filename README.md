@@ -1,5 +1,5 @@
 <h2>The issue of missing molecule names in Meeko PDBQT (V0.4.0)</h2>
-<p>The name of a molecule is a very important information. But the output file of <a ref="https://github.com/forlilab/Meeko">meeko</a> did not include the name line.</p>
+<p>The name of a molecule is a very important information. However, Meeko (https://github.com/forlilab/Meeko) PDBQT did not include the name line.</p>
 <p>test.sdf:  an example of SDF file with molecular name "test"</p>
 <pre line="1" lang="python">
 test
