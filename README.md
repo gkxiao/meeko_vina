@@ -72,11 +72,3 @@ REMARK Flexibility Score: inf
 ROOT
 ATOM      1  C   UNL     1      -4.776   0.390  -0.036  1.00  0.00     0.021 A
 </pre>
-<h2>Run a VS with Unidock</h2>
-<p>Uni-Dock (https://github.com/dptech-corp/Uni-Dock) is a GPU-accelerated molecular docking program. </p>
-<pre line="1" lang="python">
-# create a index file
-ls actives/*.pdbqt >> actives.index
-# run VS
-time unidock --ligand_index actives.index --config dock.conf --search_mode fast --dir actives_out/ >> actives_unidock.log
-</pre>
