@@ -51,18 +51,10 @@ TORSDOF 0
 title = mol.GetProp('_Name')
 pdbqt_string = 'REMARK  Name = '+title+'\n'+pdbqt_string
 </pre>
-<p>After the modification, it looks likes as following:</p>
-<pre line="301" lang="python">
-        else:
-            preparator.prepare(mol)
-            pdbqt_string = preparator.write_pdbqt_string()
-            title = mol.GetProp('_Name')
-            pdbqt_string = 'REMARK  Name = '+title+'\n'+pdbqt_string
-            mol_name = preparator.setup.name # setup.name may be None
-            output(pdbqt_string, mol_name)
-            if args.verbose: preparator.show_setup()
-</pre>
+<p>Save the revised file as mk_prepare_ligand_new.py.</p>
 <p>Try it：</p>
 <pre line="1" lang="python">
-mk_prepare_ligand_new.py -i actives_final.sdf --multimol_outdir actives_out --multimol_prefix actives
+mk_prepare_ligand_new.py -i actives_final.sdf \
+  --multimol_outdir actives_out \
+   --multimol_prefix actives
 </pre>
