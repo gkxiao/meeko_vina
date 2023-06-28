@@ -58,3 +58,17 @@ mk_prepare_ligand_new.py -i actives_final.sdf \
   --multimol_outdir actives_out \
    --multimol_prefix actives
 </pre>
+<p>Check one pdbqt file：</p>
+<pre line="1" lang="python">
+(rdkit2020) gkxiao@master:/public/gkxiao/work/meeko$ head actives_out/actives-1.pdbqt
+REMARK  Name = CHEMBL430421
+REMARK SMILES COC(=O)c1c(-c2cc(OC)c(OC)c(OC)c2)c2cc(OC)c(OC)cc2c(=O)n1C1CCCC1
+REMARK SMILES IDX 6 1 19 2 20 3 21 4 24 5 27 6 28 7 29 8 30 9 31 10 5 11 7 12
+REMARK SMILES IDX 9 13 12 14 8 15 15 16 18 17 10 18 11 19 13 20 14 21 16 22
+REMARK SMILES IDX 17 23 3 24 4 25 2 26 1 27 32 28 36 29 33 30 35 31 34 32
+REMARK SMILES IDX 22 33 23 34 25 35 26 36
+REMARK H PARENT
+REMARK Flexibility Score: inf
+ROOT
+ATOM      1  C   UNL     1      -4.776   0.390  -0.036  1.00  0.00     0.021 A
+</pre>
