@@ -56,7 +56,7 @@ pdbqt_string = 'REMARK  Name = '+title+'\n'+pdbqt_string
 <pre line="1" lang="python">
 mk_prepare_ligand_new.py -i actives_final.sdf \
   --multimol_outdir actives \
-   --multimol_prefix actives
+  --multimol_prefix actives
 </pre>
 <p>Check one pdbqt file：</p>
 <pre line="1" lang="python">
