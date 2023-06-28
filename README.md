@@ -62,3 +62,7 @@ pdbqt_string = 'REMARK  Name = '+title+'\n'+pdbqt_string
             output(pdbqt_string, mol_name)
             if args.verbose: preparator.show_setup()
 </pre>
+<p>Try it：</p>
+<pre line="1" lang="python">
+mk_prepare_ligand_new.py -i actives_final.sdf --multimol_outdir actives_out --multimol_prefix actives
+</pre>
