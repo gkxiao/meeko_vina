@@ -46,7 +46,7 @@ ENDROOT
 TORSDOF 0
 </pre>
 <h2>How to fix it?</h2>
-<p>After the line 303 in the mk_prepare_ligand.py, insert two lines:</p>
+<p>After the line 303 in the mk_prepare_ligand.py(Meeko V0.4), insert two lines:</p>
 <pre line="1" lang="python">
 title = mol.GetProp('_Name')
 pdbqt_string = 'REMARK  Name = '+title+'\n'+pdbqt_string
