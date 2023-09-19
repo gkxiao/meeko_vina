@@ -72,3 +72,8 @@ REMARK Flexibility Score: inf
 ROOT
 ATOM      1  C   UNL     1      -4.776   0.390  -0.036  1.00  0.00     0.021 A
 </pre>
+<h2>Translate PDBQT into SDF with tilte in the first line</h2>
+<p>Translate a docking results into sdf file:</p>
+<pre line="1" lang="python">
+mk_export.py -o actives-1_out.sdf actives-1_out.pdbqt
+</pre>
