@@ -64,7 +64,7 @@ def extract_title(docking_pdbqt_file):
             title.append(lines[i].split()[3])
     return title
 def add_title(sdf_string,title):
-    sdflines= output_string.split('\n')
+    sdflines= sdf_string.split('\n')
     for i in range(len(sdflines)):
         if 'RDKit' in sdflines[i]:
             sdflines[i-1] = title
